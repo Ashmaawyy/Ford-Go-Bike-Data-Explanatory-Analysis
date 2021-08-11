@@ -34,3 +34,6 @@ def user_birth_year_hist():
     plt.axvline(ford_data['member_birth_year'].mean().__round__(), color = 'red')
     plt.axvline(ford_data['member_birth_year'].max(), color = 'black')
     plt.show()
+
+def user_birth_year_duration_plot():
+    sns.scatterplot(data = ford_data, x = 'member_birth_year', y = 'duration_sec');
