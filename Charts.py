@@ -25,3 +25,9 @@ def user_type_barplot():
 
 def user_type_catplot():
     sns.catplot(data = ford_data, x = 'user_type', y = 'duration_sec');
+
+def user_birth_year_hist():
+    bins = np.arange(1930, ford_data['member_birth_year'].max(), 10)
+    plt.axvline(ford_data['member_birth_year'].mean().__round__(), color = 'red')
+    plt.axvline(ford_data['member_birth_year'].max(), color = 'black')
+    plt.hist(ford_data['member_birth_year'], bins = bins);
