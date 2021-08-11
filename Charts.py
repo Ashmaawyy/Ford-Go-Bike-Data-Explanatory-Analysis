@@ -28,6 +28,9 @@ def user_type_catplot():
 
 def user_birth_year_hist():
     bins = np.arange(1930, ford_data['member_birth_year'].max(), 10)
+    plt.xlabel('Years of Birth')
+    plt.ylabel('Count')
+    plt.hist(ford_data['member_birth_year'], bins = bins);
     plt.axvline(ford_data['member_birth_year'].mean().__round__(), color = 'red')
     plt.axvline(ford_data['member_birth_year'].max(), color = 'black')
-    plt.hist(ford_data['member_birth_year'], bins = bins);
+    plt.show()
