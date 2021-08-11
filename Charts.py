@@ -36,4 +36,4 @@ def user_birth_year_hist():
     plt.show()
 
 def user_birth_year_duration_plot():
-    sns.scatterplot(data = ford_data, x = 'member_birth_year', y = 'duration_sec');
+    sns.scatterplot(data = ford_data, y = 'member_birth_year', x = 'duration_sec');
