@@ -2,10 +2,11 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+np.random.seed(42)
 
 ford_data = pd.read_csv('201902-fordgobike-tripdata.csv')
-# for faster computation I may use random samples of range 10000 of the dataset in the plots
-sample = np.random.choice(ford_data.shape[0], 10000, replace = False)
+# for faster computation I may use random samples of range 20,000 of the dataset in the plots
+sample = np.random.choice(ford_data.shape[0], 20000, replace = False)
 ford_data_subset = ford_data.iloc[sample]
 def data_cleaning():
     ford_data.drop(columns = ['start_station_latitude', 'start_station_longitude', 'end_station_latitude', 'end_station_longitude'], axis = 1, inplace = True)
