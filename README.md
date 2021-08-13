@@ -1,4 +1,9 @@
 # Ford-Go-Bike-Data-Explanatory-Analysis
+# Project Walkthrough
+- First things first I first cleaned the data from null values and extra columns.
+- Then I worked my way through the data in exploratory analysis.
+- I investigated the duration variable against all the other variables available in the dataset.
+- I executed Univariate, Bivariate and Multivariate Explanatory analysies to distnguish relations between all other variables and the investgation variable.
 ### I tried my best with this data and came forth with these conclusions:
 - Most of the users are Males.
 - There is no apparent relation what so ever between user's gender and the duration of the trip.
