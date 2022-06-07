@@ -1,4 +1,4 @@
-# Ford-Go-Bike-Data-Explanatory-Analysis
+# Ford Go Bike Data Explanatory Analysis
 # Project Walkthrough
 - First things first I first cleaned the data from null values and extra columns.
 - Then I worked my way through the data in exploratory analysis.
