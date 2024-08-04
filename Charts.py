@@ -56,7 +56,6 @@ def user_birth_year_duration_plot():
     sns.regplot(data = ford_data_subset, y = 'member_birth_year', x = 'duration_sec');
     plt.title('Age Vs. Duration');
 
-
 def user_age_gender_duration():
     # Markers for each variable :)
     ttype_markers = [['Male', '^'], ['Female', 'p'], ['Other', 'o']]
